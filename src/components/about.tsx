@@ -6,14 +6,14 @@ import { useInView, motion } from "motion/react";
 
 export const About: React.FC = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.5 });
+  const isInView = useInView(ref, { once: true, amount: 0.5 });
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 100 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      initial={{ opacity: 0, y: 150 }}
+      animate={isInView ? { opacity: 1, y: 80 } : {}}
       transition={{ duration: 0.3 }}
-      className="max-w-[1320px] mx-auto p-18  grid grid-cols-1 md:grid-cols-2 gap-12 items-center rounded-2xl bg-white  shadow-lg mt-28"
+      className="max-w-[1320px] mx-auto p-18  grid grid-cols-1 md:grid-cols-2 gap-12 items-center rounded-2xl bg-white  shadow-lg mt-20"
     >
       {/* Left Image + Socials */}
       <div className="flex flex-col items-center relative">
