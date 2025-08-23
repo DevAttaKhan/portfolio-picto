@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Palette, Code, Smartphone, BarChart3, Users, Zap } from "lucide-react";
 
 export const WhatIDo = () => {

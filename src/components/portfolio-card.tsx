@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, ExternalLink } from "lucide-react";
+import {  ExternalLink } from "lucide-react";
 
 type Props = { 
   id: number; 
@@ -10,7 +10,7 @@ type Props = {
   image: string; 
 };
 
-export const Card: React.FC<Props> = ({ id, title, description, category, tech, image }) => (
+export const Card: React.FC<Props> = ({  title, description, category, tech, image }) => (
   <motion.div
     whileHover={{ scale: 1.02 }}
     className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden border border-gray-100 transition-all duration-300 h-full"

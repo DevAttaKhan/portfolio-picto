@@ -1,7 +1,7 @@
 'use client'
 // src/components/About.tsx
 import React, { useRef } from "react";
-import { Facebook, Twitter, Linkedin, Download, ArrowRight } from "lucide-react";
+import {   Linkedin, Download, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useInView, motion } from "motion/react";
 

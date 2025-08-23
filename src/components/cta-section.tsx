@@ -1,11 +1,11 @@
 "use client";
-import { motion, useInView } from "motion/react";
+import { motion } from "motion/react";
 import { ArrowRight, Sparkles, Rocket, Zap } from "lucide-react";
 import { useRef } from "react";
 
 export const CTASection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
+ 
 
   const features = [
     {

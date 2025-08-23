@@ -29,7 +29,7 @@ export const Contact: React.FC = () => {
                 {/* Title */}
                 <div>
                   <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                    Let's discuss your Project
+                    Let&apos;s discuss your Project
                   </h2>
                   <p className="text-gray-500 text-lg leading-relaxed">
                     There are many variations of passages of Lorem Ipsu available. but the majority have suffered alte.
@@ -124,7 +124,7 @@ export const Contact: React.FC = () => {
                 {/* Form Title */}
                 <div className="lg:hidden">
                   <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                    Let's discuss your Project
+                    Let&apos;s discuss your Project
                   </h2>
                   <p className="text-gray-500 text-lg leading-relaxed mb-6">
                     There are many variations of passages of Lorem Ipsu available. but the majority have suffered alte.
