@@ -45,7 +45,7 @@ export const Contact: React.FC = () => {
                     transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
                     className="flex items-center space-x-4"
                   >
-                    <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
                       <MapPin className="w-5 h-5 text-white" />
                     </div>
                     <div>
@@ -61,7 +61,7 @@ export const Contact: React.FC = () => {
                     transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
                     className="flex items-center space-x-4"
                   >
-                    <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
                       <Mail className="w-5 h-5 text-white" />
                     </div>
                     <div>
@@ -77,7 +77,7 @@ export const Contact: React.FC = () => {
                     transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
                     className="flex items-center space-x-4"
                   >
-                    <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
                       <Phone className="w-5 h-5 text-white" />
                     </div>
                     <div>
@@ -95,19 +95,19 @@ export const Contact: React.FC = () => {
                   transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
                   className="flex space-x-4"
                 >
-                  <div className="w-10 h-10 bg-purple-600 rounded flex items-center justify-center hover:bg-purple-700 transition-colors cursor-pointer">
+                  <div className="w-10 h-10 bg-gradient-primary rounded flex items-center justify-center hover:bg-teal-700 transition-colors cursor-pointer">
                     <Facebook className="w-5 h-5 text-white" />
                   </div>
-                  <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors cursor-pointer">
+                  <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center hover:bg-teal-700 transition-colors cursor-pointer">
                     <span className="text-white font-bold text-sm">Bē</span>
                   </div>
-                  <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors cursor-pointer">
+                  <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center hover:bg-teal-700 transition-colors cursor-pointer">
                     <Instagram className="w-5 h-5 text-white" />
                   </div>
-                  <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors cursor-pointer">
+                  <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center hover:bg-teal-700 transition-colors cursor-pointer">
                     <Linkedin className="w-5 h-5 text-white" />
                   </div>
-                  <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors cursor-pointer">
+                  <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center hover:bg-teal-700 transition-colors cursor-pointer">
                     <Globe className="w-5 h-5 text-white" />
                   </div>
                 </motion.div>
@@ -144,7 +144,7 @@ export const Contact: React.FC = () => {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-purple-600 outline-none transition-colors"
+                      className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-teal-600 outline-none transition-colors"
                       placeholder="Enter your name"
                     />
                   </motion.div>
@@ -160,7 +160,7 @@ export const Contact: React.FC = () => {
                     </label>
                     <input
                       type="email"
-                      className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-purple-600 outline-none transition-colors"
+                      className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-teal-600 outline-none transition-colors"
                       placeholder="Enter your email"
                     />
                   </motion.div>
@@ -176,7 +176,7 @@ export const Contact: React.FC = () => {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-purple-600 outline-none transition-colors"
+                      className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-teal-600 outline-none transition-colors"
                       placeholder="Enter your location"
                     />
                   </motion.div>
@@ -193,7 +193,7 @@ export const Contact: React.FC = () => {
                       </label>
                       <input
                         type="text"
-                        className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-purple-600 outline-none transition-colors"
+                        className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-teal-600 outline-none transition-colors"
                         placeholder="Enter budget"
                       />
                     </motion.div>
@@ -209,7 +209,7 @@ export const Contact: React.FC = () => {
                       </label>
                       <input
                         type="text"
-                        className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-purple-600 outline-none transition-colors"
+                        className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-teal-600 outline-none transition-colors"
                         placeholder="Enter subject"
                       />
                     </motion.div>
@@ -226,7 +226,7 @@ export const Contact: React.FC = () => {
                     </label>
                     <textarea
                       rows={4}
-                      className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-purple-600 outline-none transition-colors resize-none"
+                      className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-teal-600 outline-none transition-colors resize-none"
                       placeholder="Enter your message"
                     />
                   </motion.div>
@@ -240,7 +240,7 @@ export const Contact: React.FC = () => {
                   >
                     <button
                       type="submit"
-                      className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-medium transition-colors flex items-center space-x-2"
+                      className="bg-gradient-primary hover:bg-teal-700 text-white px-8 py-3 rounded-lg font-medium transition-colors flex items-center space-x-2"
                     >
                       <span>Submit</span>
                       <svg

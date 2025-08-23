@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-blue-900 py-8">
+    <footer className="w-full bg-cyan-900 py-8">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
             className="flex items-center space-x-2 mb-4 md:mb-0"
           >
-            <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+            <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-sm">B</span>
             </div>
             <span className="text-white text-xl font-bold">Brooklyn</span>
@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-white hover:text-purple-300 transition-colors"
+                className="text-white hover:text-teal-300 transition-colors"
               >
                 {item}
               </a>

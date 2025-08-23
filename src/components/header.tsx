@@ -6,7 +6,7 @@ export const Header: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-purple-600 text-white font-bold">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-teal-600 text-white font-bold">
             A
           </div>
           <span className="text-xl font-bold text-gray-900 ">Atta Khan</span>
@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-gray-700 hover:text-purple-600 transition-colors"
+                className="text-gray-700 hover:text-teal-600 transition-colors"
               >
                 {item}
               </a>
@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
           )}
           <a
             href="#contact"
-            className="rounded bg-purple-600 px-4 py-2 text-white font-medium hover:bg-purple-700 transition-colors"
+            className="rounded bg-teal-600 px-4 py-2 text-white font-medium hover:bg-teal-700 transition-colors"
           >
             Contact
           </a>

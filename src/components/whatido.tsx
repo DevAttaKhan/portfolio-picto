@@ -7,48 +7,48 @@ export const WhatIDo = () => {
       icon: <Code className="w-6 h-6 text-white" />,
       title: "Full-Stack Development",
       description: "I build scalable, high-performance web applications using the MERN stack (MongoDB, Express.js, React, Node.js) and modern technologies like Next.js and NestJS. My solutions focus on performance, maintainability, and business growth.",
-      color: "from-purple-500 to-pink-500",
+      color: "bg-gradient-primary",
       features: ["React & Next.js", "Node.js & NestJS", "MongoDB & PostgreSQL", "REST APIs"]
     },
     {
       icon: <Palette className="w-6 h-6 text-white" />,
       title: "Frontend Development",
       description: "I create responsive, user-centric interfaces using React, TypeScript, and modern CSS frameworks. My expertise includes building reusable component systems, optimizing performance, and ensuring exceptional user experiences.",
-      color: "from-pink-500 to-purple-400",
+      color: "bg-gradient-primary",
       features: ["React & TypeScript", "Tailwind CSS & SCSS", "Redux Toolkit", "Responsive Design"]
     },
     {
       icon: <Smartphone className="w-6 h-6 text-white" />,
       title: "Mobile App Development",
       description: "I develop cross-platform mobile applications using React Native, ensuring consistent user experiences across iOS and Android. My mobile solutions are optimized for performance and follow platform best practices.",
-      color: "from-purple-400 to-indigo-500",
+      color: "bg-gradient-primary",
       features: ["React Native", "Cross-platform", "Performance Optimization", "Platform Guidelines"]
     },
     {
       icon: <BarChart3 className="w-6 h-6 text-white" />,
       title: "E-commerce Solutions",
       description: "I specialize in building robust e-commerce platforms from scratch, integrating payment systems, inventory management, and analytics. My solutions have increased client revenue and improved conversion rates.",
-      color: "from-indigo-500 to-purple-500",
+      color: "bg-gradient-primary",
       features: ["E-commerce Platforms", "Payment Integration", "Inventory Management", "Analytics Dashboard"]
     },
     {
       icon: <Users className="w-6 h-6 text-white" />,
       title: "SaaS Development",
       description: "I help companies build and launch high-performance SaaS solutions with scalable architecture, real-time features, and comprehensive dashboards. My expertise includes subscription management and user analytics.",
-      color: "from-purple-500 to-pink-400",
+      color: "bg-gradient-primary",
       features: ["SaaS Architecture", "Subscription Management", "Real-time Features", "User Analytics"]
     },
     {
       icon: <Zap className="w-6 h-6 text-white" />,
       title: "Performance Optimization",
       description: "I optimize applications for speed, scalability, and user experience. My performance improvements have reduced load times by 15% and post-release bugs by 35%, leading to better user engagement and business metrics.",
-      color: "from-pink-400 to-purple-500",
+      color: "bg-gradient-primary",
       features: ["Code Optimization", "Performance Monitoring", "Bug Reduction", "Scalability"]
     }
   ];
 
   return (
-    <section id="services" className="bg-gradient-to-br from-gray-50 to-purple-50 py-20 sm:py-24 lg:py-32">
+    <section id="services" className="bg-gradient-to-br from-gray-50 to-emerald-50 py-20 sm:py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Left Section - Sticky */}
@@ -66,8 +66,8 @@ export const WhatIDo = () => {
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               className="mb-6"
             >
-              <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
-                🛠️ My Services
+              <span className="inline-block px-4 py-2 heading-tag rounded-full text-sm font-medium">
+                 My Services
               </span>
             </motion.div>
 
@@ -79,7 +79,7 @@ export const WhatIDo = () => {
               transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
             >
               What I{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+              <span className="text-transparent bg-clip-text text-gradient-primary">
                 Do Best
               </span>
             </motion.h2>
@@ -116,7 +116,7 @@ export const WhatIDo = () => {
               transition={{ duration: 0.6, delay: 1.0, ease: "easeOut" }}
             >
               <motion.button 
-                className="group px-8 py-4 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="group px-8 py-4 rounded-lg bg-gradient-primary text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -155,7 +155,7 @@ export const WhatIDo = () => {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
                     {service.title}
                   </h3>
                   
@@ -178,14 +178,14 @@ export const WhatIDo = () => {
                           ease: "easeOut" 
                         }}
                       >
-                        <div className="w-1.5 h-1.5 bg-purple-400 rounded-full" />
+                        <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full" />
                         <span>{feature}</span>
                       </motion.div>
                     ))}
                   </div>
 
                   {/* Hover Effect Border */}
-                  <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-purple-200 transition-colors duration-300" />
+                  <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-emerald-200 transition-colors duration-300" />
                 </motion.div>
               ))}
             </div>

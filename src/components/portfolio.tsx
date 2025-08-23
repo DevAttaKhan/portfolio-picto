@@ -72,8 +72,8 @@ export const Portfolio: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
             className="mb-6"
           >
-            <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
-              🎯 My Work
+            <span className="inline-block px-4 py-2 heading-tag rounded-full text-sm font-medium">
+           My Work
             </span>
           </motion.div>
 
@@ -85,7 +85,7 @@ export const Portfolio: React.FC = () => {
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6"
           >
             Featured{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+            <span className="text-transparent bg-clip-text bg-gradient-primary">
               Projects
             </span>
           </motion.h2>
@@ -145,7 +145,7 @@ export const Portfolio: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         >
           <motion.button 
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-primary text-white font-semibold rounded-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >

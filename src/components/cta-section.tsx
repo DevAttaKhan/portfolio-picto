@@ -9,15 +9,15 @@ export const CTASection = () => {
 
   const features = [
     {
-      icon: <Sparkles className="w-5 h-5 text-purple-400" />,
+      icon: <Sparkles className="w-5 h-5 text-emerald-400" />,
       text: "Free Consultation"
     },
     {
-      icon: <Rocket className="w-5 h-5 text-purple-400" />,
+      icon: <Rocket className="w-5 h-5 text-emerald-400" />,
       text: "Quick Turnaround"
     },
     {
-      icon: <Zap className="w-5 h-5 text-purple-400" />,
+      icon: <Zap className="w-5 h-5 text-emerald-400" />,
       text: "Ongoing Support"
     }
   ];
@@ -26,21 +26,21 @@ export const CTASection = () => {
     <section
       ref={ref}
       id="cta"
-      className="relative flex items-center justify-center min-h-[70vh] bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 overflow-hidden py-20 sm:py-24 lg:py-32"
+      className="relative flex items-center justify-center min-h-[70vh] bg-gradient-to-br from-gray-900 via-emerald-900 to-gray-900 overflow-hidden py-20 sm:py-24 lg:py-32"
     >
       {/* Animated background elements */}
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: [0.1, 0.3, 0.1], scale: [0.8, 1.2, 0.8] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute w-[800px] h-[800px] rounded-full bg-purple-600 blur-[200px] opacity-20"
+        className="absolute w-[800px] h-[800px] rounded-full bg-emerald-600 blur-[200px] opacity-20"
       />
       
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: [0.1, 0.2, 0.1], scale: [0.6, 1.0, 0.6] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-        className="absolute w-[600px] h-[600px] rounded-full bg-pink-600 blur-[150px] opacity-20"
+        className="absolute w-[600px] h-[600px] rounded-full bg-cyan-600 blur-[150px] opacity-20"
       />
 
       <div className="relative z-10 text-center max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -52,8 +52,8 @@ export const CTASection = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mb-6"
         >
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100/10 backdrop-blur-sm text-purple-300 rounded-full text-sm font-medium border border-purple-300/20">
-            🚀 Ready to Start?
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100/10 backdrop-blur-sm text-emerald-300 rounded-full text-sm font-medium border border-emerald-300/20">
+              Ready to Start?
           </span>
         </motion.div>
 
@@ -66,7 +66,7 @@ export const CTASection = () => {
           className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight mb-6"
         >
           Have a{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
             Project in Mind?
           </span>
         </motion.h2>
@@ -129,7 +129,7 @@ export const CTASection = () => {
             href="#contact"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-600 to-cyan-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <span>Start Your Project</span>
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

@@ -32,41 +32,12 @@ export const About: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
             <div className="relative">
-              {/* Floating decorative elements */}
-              <motion.div
-                className="absolute -top-6 -right-6 w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-xl"
-                animate={{ 
-                  scale: [1, 1.2, 1],
-                  opacity: [0.2, 0.4, 0.2],
-                  rotate: [0, 180, 360]
-                }}
-                transition={{ 
-                  duration: 8, 
-                  repeat: Infinity, 
-                  ease: "easeInOut" 
-                }}
-              />
-              
-              <motion.div
-                className="absolute -bottom-8 -left-8 w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 bg-gradient-to-tr from-blue-400/20 to-purple-400/20 rounded-full blur-2xl"
-                animate={{ 
-                  scale: [1, 1.3, 1],
-                  opacity: [0.15, 0.3, 0.15],
-                  rotate: [360, 180, 0]
-                }}
-                transition={{ 
-                  duration: 10, 
-                  repeat: Infinity, 
-                  ease: "easeInOut",
-                  delay: 2
-                }}
-              />
-
+   
               {/* Main image container with enhanced styling */}
               <div className="relative">
                 {/* Glowing background effect */}
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-[2.5rem] blur-3xl opacity-30"
+                  className="absolute inset-0 bg-gradient-secondary  rounded-[2.5rem] blur-3xl opacity-30"
                   animate={{ 
                     scale: [1, 1.1, 1],
                     opacity: [0.3, 0.5, 0.3]
@@ -79,7 +50,7 @@ export const About: React.FC = () => {
                 />
 
                 {/* Simplified image frame with gradient border */}
-                <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-[400px] sm:h-[450px] lg:h-[500px] rounded-[2rem] p-[3px] bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500">
+                <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-[400px] sm:h-[450px] lg:h-[500px] rounded-[2rem] p-[3px] bg-gradient-secondary ">
                   <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden">
                     <Image
                       src="/images/profile2.png"
@@ -129,7 +100,7 @@ export const About: React.FC = () => {
 
                 {/* Floating accent elements */}
                 <motion.div
-                  className="absolute -top-2 -right-2 w-4 h-4 bg-purple-500 rounded-full shadow-lg"
+                  className="absolute -top-2 -right-2 w-4 h-4 bg-primary rounded-full shadow-lg"
                   animate={{ 
                     scale: [1, 1.5, 1],
                     opacity: [0.7, 1, 0.7]
@@ -142,7 +113,7 @@ export const About: React.FC = () => {
                 />
                 
                 <motion.div
-                  className="absolute -bottom-2 -left-2 w-3 h-3 bg-pink-500 rounded-full shadow-lg"
+                  className="absolute -bottom-2 -left-2 w-3 h-3 bg-secondary rounded-full shadow-lg"
                   animate={{ 
                     scale: [1, 1.3, 1],
                     opacity: [0.7, 1, 0.7]
@@ -168,7 +139,7 @@ export const About: React.FC = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-primary  rounded-full flex items-center justify-center">
                     <span className="text-white text-lg">💻</span>
                   </div>
                   <div>
@@ -204,7 +175,7 @@ export const About: React.FC = () => {
                 href="http://www.linkedin.com/in/atta-ur-rahman-ak"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative z-10 p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                className="group relative z-10 p-3 rounded-xl button-text-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -214,7 +185,7 @@ export const About: React.FC = () => {
                 href="https://github.com/DevAttaKhan"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative z-10 p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                className="group relative z-10 p-3 rounded-xl button-text-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -224,7 +195,7 @@ export const About: React.FC = () => {
               </motion.a>
               <motion.a
                 href="mailto:attakhandev@gmail.com"
-                className="group relative z-10 p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                className="group relative z-10 p-3 rounded-xl button-text-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -248,7 +219,7 @@ export const About: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
               className="mb-4"
             >
-              <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
+              <span className="inline-block px-4 py-2 heading-tag rounded-full text-sm font-medium">
                 💻 Senior Developer
               </span>
             </motion.div>
@@ -260,7 +231,7 @@ export const About: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
             >
               I am a{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+              <span className="text-transparent bg-clip-text text-gradient-primary ">
                 Senior MERN Stack Developer
               </span>{" "}
               & Tech Lead
@@ -300,7 +271,7 @@ export const About: React.FC = () => {
                 {skills.map((skill, index) => (
                   <motion.span
                     key={skill}
-                    className="px-3 py-2 bg-purple-50 text-purple-700 rounded-lg text-sm font-medium text-center hover:bg-purple-100 transition-colors cursor-pointer"
+                    className="px-3 py-2 heading-tag rounded-lg text-sm font-medium text-center hover:bg-purple-100 transition-colors cursor-pointer"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.4, delay: 1.6 + index * 0.1, ease: "easeOut" }}
@@ -321,7 +292,7 @@ export const About: React.FC = () => {
             >
               <motion.a
                 href="#portfolio"
-                className="group flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-4 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="group flex items-center justify-center gap-2 rounded-lg bg-gradient-primary px-8 py-4 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -330,7 +301,7 @@ export const About: React.FC = () => {
               </motion.a>
               <motion.a
                 href="mailto:attakhandev@gmail.com"
-                className="group flex items-center justify-center gap-2 rounded-lg border-2 border-purple-600 px-8 py-4 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1"
+                className="btn-ghost"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

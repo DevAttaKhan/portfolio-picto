@@ -11,7 +11,7 @@ export const Process = () => {
       title: "Discovery & Research",
       desc: "I begin by understanding your business goals, target audience, and market landscape. This includes competitor analysis, user interviews, and data-driven insights to inform the design strategy.",
       icon: <Calendar className="w-6 h-6 text-white" />,
-      color: "from-purple-500 to-pink-500",
+      color: "bg-gradient-primary",
       features: ["User Research", "Competitor Analysis", "Business Requirements"]
     },
     {
@@ -19,7 +19,7 @@ export const Process = () => {
       title: "Strategy & Planning",
       desc: "Based on research findings, I develop a comprehensive strategy including user personas, journey maps, information architecture, and technical requirements to guide the design process.",
       icon: <BarChart2 className="w-6 h-6 text-white" />,
-      color: "from-pink-500 to-purple-400",
+      color: "bg-gradient-primary",
       features: ["User Personas", "Journey Mapping", "Information Architecture"]
     },
     {
@@ -27,7 +27,7 @@ export const Process = () => {
       title: "Design & Prototyping",
       desc: "I create wireframes, high-fidelity mockups, and interactive prototypes using industry-standard tools. This phase focuses on usability, accessibility, and visual appeal.",
       icon: <PenTool className="w-6 h-6 text-white" />,
-      color: "from-purple-400 to-indigo-500",
+      color: "bg-gradient-primary",
       features: ["Wireframing", "UI Design", "Interactive Prototypes"]
     },
     {
@@ -35,7 +35,7 @@ export const Process = () => {
       title: "Development & Launch",
       desc: "I bring designs to life with clean, scalable code using modern technologies. The final product undergoes rigorous testing before launch to ensure optimal performance.",
       icon: <Laptop className="w-6 h-6 text-white" />,
-      color: "from-indigo-500 to-purple-500",
+      color: "bg-gradient-primary",
       features: ["Frontend Development", "Testing & QA", "Deployment"]
     },
   ];
@@ -59,8 +59,8 @@ export const Process = () => {
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               className="mb-4"
             >
-              <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
-                🚀 My Process
+              <span className="inline-block px-4 py-2 heading-tag rounded-full text-sm font-medium">
+                 My Process
               </span>
             </motion.div>
 
@@ -72,7 +72,7 @@ export const Process = () => {
               transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
             >
               How I Bring Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+              <span className="text-transparent bg-clip-text  text-gradient-primary ">
                 Vision to Life
               </span>
             </motion.h2>
@@ -118,7 +118,7 @@ export const Process = () => {
                   whileHover={{ scale: 1.02 }}
                 >
                   {/* Step Number Badge */}
-                  <div className="absolute z-10 -top-3 -right-3 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                  <div className="absolute z-10 -top-3 -right-3 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
                     {step.id}
                   </div>
 
@@ -130,7 +130,7 @@ export const Process = () => {
                   </div>
 
                   {/* Content */}
-                  <h3 className="font-bold text-xl text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
+                  <h3 className="font-bold text-xl text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
                     {step.title}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
@@ -152,14 +152,14 @@ export const Process = () => {
                           ease: "easeOut" 
                         }}
                       >
-                        <CheckCircle size={16} className="text-purple-500 flex-shrink-0" />
+                        <CheckCircle size={16} className="text-emerald-500 flex-shrink-0" />
                         <span>{feature}</span>
                       </motion.div>
                     ))}
                   </div>
 
                   {/* Hover Effect Border */}
-                  <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-purple-200 transition-colors duration-300" />
+                  <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-emerald-200 transition-colors duration-300" />
                 </motion.div>
               ))}
             </div>

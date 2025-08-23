@@ -38,9 +38,9 @@ export const Hero: React.FC = () => {
               modes: { repulse: { distance: 100, duration: 0.9 } },
             },
             particles: {
-              color: { value: "#a855f7" },
+              color: { value: "#10b981" },
               links: {
-                color: "#B764FF",
+                color: "#14b8a6",
                 distance: 200,
                 enable: true,
                 opacity: 0.3,
@@ -70,24 +70,23 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+                 whileHover={{ scale: 1.02 }}
+                 whileTap={{ scale: 0.98 }}
               className="mb-3"
             >
-              <span className="inline-block px-3 py-1.5 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">
-                🚀 Available for New Projects
+              <span className="inline-block px-3 py-1.5 heading-tag rounded-full text-xs font-medium">
+                 Available for New Projects
               </span>
             </motion.div>
 
             <motion.h1 
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-3 lg:mb-4"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-700 leading-tight mb-3 lg:mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               Hello, I&apos;m{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+              <span className="text-gradient-primary">
                 Atta Ur Rahman
               </span>
             </motion.h1>
@@ -99,8 +98,8 @@ export const Hero: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               I&apos;m a passionate{" "}
-              <span className="font-semibold text-purple-600">Senior MERN Stack Developer</span> with{" "}
-              <span className="font-semibold text-purple-600">4+ years of experience</span> based in Islamabad, Pakistan. 
+              <span className="font-semibold primary-text-highlight">Senior MERN Stack Developer</span> with{" "}
+              <span className="font-semibold primary-text-highlight">4+ years of experience</span> based in Islamabad, Pakistan. 
               I specialize in building scalable SaaS and e-commerce solutions that drive measurable business growth.
             </motion.p>
 
@@ -112,14 +111,14 @@ export const Hero: React.FC = () => {
             >
               <a
                 href="#contact"
-                className="group relative overflow-hidden rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-3 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-sm"
+                className="group shrink-0 relative overflow-hidden rounded-lg bg-gradient-primary px-6 py-3 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-sm"
               >
                 <span className="relative z-10">Let&apos;s Create Something Amazing</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-pink-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-700 to-teal-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </a>
               <a
                 href="#portfolio"
-                className="group rounded-lg border-2 border-purple-600 px-6 py-3 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 text-sm"
+                className="group rounded-lg border-2 primary-border-color px-6 py-3 primary-text-highlight font-semibold  hover:text-white transition-all duration-300 transform hover:-translate-y-1 text-sm"
               >
                 View My Work
               </a>
@@ -201,10 +200,10 @@ export const Hero: React.FC = () => {
               <div className="relative">
                 {/* Glowing background effect */}
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-[2rem] blur-2xl opacity-30"
+                  className="absolute inset-0 bg-gradient-secondary rounded-[2rem] blur-2xl opacity-30"
                   animate={{ 
                     scale: [1, 1.1, 1],
-                    opacity: [0.3, 0.5, 0.3]
+                    opacity: [0.3, 0.2, 0.3]
                   }}
                   transition={{ 
                     duration: 6, 
@@ -216,7 +215,7 @@ export const Hero: React.FC = () => {
                 {/* Image frame with responsive dimensions */}
                 <div className="relative w-full h-[280px] sm:h-[320px] md:h-[380px] lg:h-[450px] xl:h-[520px] rounded-[1.5rem] lg:rounded-[2rem] overflow-hidden">
                   {/* Gradient border overlay */}
-                  <div className="absolute inset-0 rounded-[1.5rem] lg:rounded-[2rem] p-[2px] lg:p-[3px] bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500">
+                  <div className="absolute inset-0 rounded-[1.5rem] lg:rounded-[2rem] p-[2px] lg:p-[3px] bg-gradient-to-br bg-gradient-secondary">
                     <div className="relative w-full h-full rounded-[1.4rem] lg:rounded-[1.8rem] overflow-hidden bg-white">
                       <Image
                         src="/images/profile2.png"
@@ -232,7 +231,7 @@ export const Hero: React.FC = () => {
                       
                       {/* Floating tech badges - Responsive sizing */}
                       <motion.div
-                        className="absolute top-2 right-2 lg:top-4 lg:right-4 px-2 py-1 lg:px-3 lg:py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-purple-700 border border-white/50 shadow-lg"
+                        className="absolute top-2 right-2 lg:top-4 lg:right-4 px-2 py-1 lg:px-3 lg:py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium primary-text-highlight  border border-white/50 shadow-lg"
                         initial={{ opacity: 0, y: -15, scale: 0.8 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         transition={{ duration: 0.6, delay: 1.2, ease: "easeOut" }}
@@ -242,7 +241,7 @@ export const Hero: React.FC = () => {
                       </motion.div>
                       
                       <motion.div
-                        className="absolute bottom-2 left-2 lg:bottom-4 lg:left-4 px-2 py-1 lg:px-3 lg:py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-pink-700 border border-white/50 shadow-lg"
+                        className="absolute bottom-2 left-2 lg:bottom-4 lg:left-4 px-2 py-1 lg:px-3 lg:py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium primary-text-highlight  border border-white/50 shadow-lg"
                         initial={{ opacity: 0, y: 15, scale: 0.8 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         transition={{ duration: 0.6, delay: 1.4, ease: "easeOut" }}
@@ -256,7 +255,7 @@ export const Hero: React.FC = () => {
 
                 {/* Floating accent elements - Smaller for compact screens */}
                 <motion.div
-                  className="absolute -top-1 -right-1 lg:-top-2 lg:-right-2 w-3 h-3 lg:w-4 lg:h-4 bg-purple-500 rounded-full shadow-lg"
+                  className="absolute -top-1 -right-1 lg:-top-2 lg:-right-2 w-3 h-3 lg:w-4 lg:h-4 bg-primary rounded-full shadow-lg"
                   animate={{ 
                     scale: [1, 1.5, 1],
                     opacity: [0.7, 1, 0.7]
@@ -269,7 +268,7 @@ export const Hero: React.FC = () => {
                 />
                 
                 <motion.div
-                  className="absolute -bottom-1 -left-1 lg:-bottom-2 lg:-left-2 w-2 h-2 lg:w-3 lg:h-3 bg-pink-500 rounded-full shadow-lg"
+                  className="absolute -bottom-1 -left-1 lg:-bottom-2 lg:-left-2 w-2 h-2 lg:w-3 lg:h-3 bg-secondary rounded-full shadow-lg"
                   animate={{ 
                     scale: [1, 1.3, 1],
                     opacity: [0.7, 1, 0.7]
@@ -295,7 +294,7 @@ export const Hero: React.FC = () => {
                 whileHover={{ scale: 1.05, y: -3 }}
               >
                 <div className="flex items-center gap-2 lg:gap-3">
-                  <div className="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-primary rounded-full flex items-center justify-center">
                     <span className="text-white text-sm lg:text-lg">🏆</span>
                   </div>
                   <div>
