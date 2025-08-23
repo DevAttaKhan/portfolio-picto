@@ -10,8 +10,8 @@ export const About: React.FC = () => {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const skills = [
-    "UI/UX Design", "React.js", "Next.js", "TypeScript", 
-    "Tailwind CSS", "Framer Motion", "Figma", "Adobe XD"
+    "React & Next.js", "Node.js", 'NestJS', "TypeScript", "MongoDB", 
+    "PostgreSQL", "Redux Toolkit", "Tailwind CSS", "AWS & Docker"
   ];
 
   return (
@@ -49,7 +49,7 @@ export const About: React.FC = () => {
               <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-[400px] sm:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/profile2.png"
-                  alt="Brooklyn Gilbert - Professional UX Designer"
+                  alt="Atta Ur Rahman - Senior MERN Stack Developer"
                   className="w-full h-full object-cover"
                   width={600}
                   height={700}
@@ -67,28 +67,36 @@ export const About: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
             >
               <motion.a
-                href="#"
-                className="group p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Facebook size={20} className="group-hover:scale-110 transition-transform" />
-              </motion.a>
-              <motion.a
-                href="#"
-                className="group p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Twitter size={20} className="group-hover:scale-110 transition-transform" />
-              </motion.a>
-              <motion.a
-                href="#"
+                href="http://www.linkedin.com/in/atta-ur-rahman-ak"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Linkedin size={20} className="group-hover:scale-110 transition-transform" />
+              </motion.a>
+              <motion.a
+                href="https://github.com/DevAttaKhan"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </motion.a>
+              <motion.a
+                href="mailto:attakhandev@gmail.com"
+                className="group p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
               </motion.a>
             </motion.div>
           </motion.div>
@@ -107,7 +115,7 @@ export const About: React.FC = () => {
               className="mb-4"
             >
               <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
-                🎨 Creative Professional
+                💻 Senior Developer
               </span>
             </motion.div>
 
@@ -119,9 +127,9 @@ export const About: React.FC = () => {
             >
               I am a{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-                Professional UX Designer
+                Senior MERN Stack Developer
               </span>{" "}
-              & Developer
+              & Tech Lead
             </motion.h2>
 
             <motion.p 
@@ -130,9 +138,9 @@ export const About: React.FC = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 1.0, ease: "easeOut" }}
             >
-              With over 15 years of experience in digital design and development, I specialize in creating 
-              user-centered experiences that drive business growth. My approach combines deep user research, 
-              intuitive design principles, and cutting-edge technology to deliver solutions that users love.
+              With over 4 years of experience in MERN stack development, I specialize in building scalable, 
+              high-performance SaaS and e-commerce solutions. I&apos;ve helped companies reduce post-release bugs by 35%, 
+              improve app performance by 15%, and increase e-commerce conversions by 10%.
             </motion.p>
 
             <motion.p 
@@ -141,8 +149,9 @@ export const About: React.FC = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 1.2, ease: "easeOut" }}
             >
-              I&apos;ve worked with startups, Fortune 500 companies, and everything in between, helping them 
-              transform their digital presence and achieve their business objectives through exceptional user experience design.
+              I&apos;ve worked with companies like iPlex Pvt. Ltd and Logic Tech Pvt. Ltd, leading development teams 
+              and delivering projects that exceed expectations. My expertise spans from frontend development with React 
+              and Next.js to backend architecture with Node.js and NestJS.
             </motion.p>
 
             {/* Skills Grid */}
@@ -186,13 +195,13 @@ export const About: React.FC = () => {
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </motion.a>
               <motion.a
-                href="/cv.pdf"
+                href="mailto:attakhandev@gmail.com"
                 className="group flex items-center justify-center gap-2 rounded-lg border-2 border-purple-600 px-8 py-4 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <Download size={20} />
-                <span>Download CV</span>
+                <span>Contact Me</span>
               </motion.a>
             </motion.div>
           </motion.div>

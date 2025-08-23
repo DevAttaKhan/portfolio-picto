@@ -88,7 +88,7 @@ export const Hero: React.FC = () => {
             >
               Hello, I&apos;m{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-                Atta Khan
+                Atta Ur Rahman
               </span>
             </motion.h1>
 
@@ -99,9 +99,9 @@ export const Hero: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               I&apos;m a passionate{" "}
-              <span className="font-semibold text-purple-600">UI/UX Designer</span> and{" "}
-              <span className="font-semibold text-purple-600">Full-Stack Developer</span> based in London, England. 
-              I specialize in creating immersive digital experiences that combine beautiful design with powerful functionality.
+              <span className="font-semibold text-purple-600">Senior MERN Stack Developer</span> with{" "}
+              <span className="font-semibold text-purple-600">4+ years of experience</span> based in Islamabad, Pakistan. 
+              I specialize in building scalable SaaS and e-commerce solutions that drive measurable business growth.
             </motion.p>
 
             <motion.div 
@@ -137,7 +137,7 @@ export const Hero: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <p className="text-xl sm:text-2xl font-bold text-gray-900">15+</p>
+                <p className="text-xl sm:text-2xl font-bold text-gray-900">4+</p>
                 <p className="text-xs sm:text-sm text-gray-600">Years Experience</p>
               </motion.div>
               <motion.div 
@@ -145,7 +145,7 @@ export const Hero: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <p className="text-xl sm:text-2xl font-bold text-gray-900">250+</p>
+                <p className="text-xl sm:text-2xl font-bold text-gray-900">100+</p>
                 <p className="text-xs sm:text-sm text-gray-600">Projects Delivered</p>
               </motion.div>
               <motion.div 
@@ -153,8 +153,8 @@ export const Hero: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <p className="text-xl sm:text-2xl font-bold text-gray-900">98%</p>
-                <p className="text-xs sm:text-sm text-gray-600">Client Satisfaction</p>
+                <p className="text-xl sm:text-2xl font-bold text-gray-900">35%</p>
+                <p className="text-xs sm:text-sm text-gray-600">Bug Reduction</p>
               </motion.div>
             </motion.div>
           </motion.div>
@@ -182,7 +182,7 @@ export const Hero: React.FC = () => {
               <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] shadow-2xl rounded-3xl bg-white overflow-hidden">
                 <Image
                   src="/images/profile2.png"
-                  alt="Brooklyn Gilbert - UI/UX Designer & Developer"
+                  alt="Atta Ur Rahman - Senior MERN Stack Developer"
                   className="w-full h-full object-cover"
                   width={600}
                   height={700}

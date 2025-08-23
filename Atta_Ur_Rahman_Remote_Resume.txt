@@ -1,0 +1,43 @@
+Atta Ur Rahman
+Senior MERN Stack Developer | React | Next.js | Node.js | NestJS
+Islamabad, Pakistan | attakhandev@gmail.com | +92 316 1217056
+LinkedIn: http://www.linkedin.com/in/atta-ur-rahman-ak
+GitHub:    https://github.com/DevAttaKhan
+Timezone: PKT (UTC+5) | Open to US/EU/Remote Roles
+Professional Summary
+I’m a MERN Stack Developer with 4+ years of experience helping companies build and launch high-performance SaaS and e-commerce solutions. I have a proven track record of developing scalable applications using React, Next.js, NestJS, AWS, and Docker, leading to measurable business improvements such as increased revenue and faster deployment cycles.
+I work seamlessly with global, distributed teams, leveraging Agile processes, CI/CD automation, and async communication to ensure projects are delivered on time and exceed expectations. I take pride in delivering clean, maintainable code that stands the test of time.
+Core Skills
+Frontend: React, Next.js, TypeScript, Redux Toolkit, Tailwind CSS, SCSS
+Backend: Node.js, Express.js, NestJS, TypeORM, PostgreSQL, MongoDB, MySQL, REST APIs, Git
+DevOps & Tools: AWS, Docker, Nginx, CI/CD (GitHub Actions)
+Other: Agile/Scrum, Remote Collaboration (Slack, Jira, Trello, Asana)
+
+Professional Experience
+MERN Stack Developer — iPlex Pvt. Ltd, Rawalpindi (Jan 2022 – Present)
+• Reduced post-release bugs by 35% through implementing scalable architecture and reusable React components.
+• Refactored legacy code, reducing JavaScript codebase by 30% while maintaining business logic, improving performance and UX.
+• Built a reusable React component system using Atomic CSS principles, cutting development time and ensuring UI consistency.
+• Led development of a commercial e-commerce platform from scratch, aligning with complex business logic and increasing client revenue.
+• Continuously learned and implemented new technologies, achieving significant cost savings for the company.
+
+Front-End Developer — Logic Tech Pvt. Ltd, Peshawar (Jun 2020 – Jul 2021)
+• Developed 100+ responsive landing pages in React and TypeScript, boosting e-commerce client conversions by 10%.
+• Optimized app performance, reducing load times by 15% through refactoring and architecture improvements.
+• Migrated outdated React code to modern architecture, improving maintainability and speeding project delivery by 20%.
+• Enhanced security by implementing secure API integrations and input validation, reducing vulnerabilities.
+
+Projects
+SyncMarket.io (Sep 2024 – Present) — Next.js, TypeScript, Redux Toolkit, Tailwind CSS, Laravel, MySQL
+• Built a subscription-based e-commerce platform integrating Shopify and local brands with real-time inventory syncing and affiliate tracking.
+• Added CSV import with live progress tracking and responsive dashboards using Recharts for actionable analytics.
+• Developed cross-platform mobile apps in React Native for consistent UX on iOS and Android.
+TekNuclei IoT Dashboard (May – Jun 2024) — React, TypeScript, Redux Toolkit, Tailwind CSS, NestJS, MongoDB
+• Created a responsive IoT monitoring dashboard with real-time updates using RTK Query and TanStack Tables.
+• Integrated Leaflet maps for hardware location visualization, improving decision-making for network tower management.
+Education
+BS in Computer Science — Abasyn University, Aug 2021
+Additional Information
+• Comfortable working across US, EU, and Asia time zones.
+• Experienced in async communication and distributed team collaboration.
+• Payment-ready via Wise, Payoneer, or Deel for international contracts.

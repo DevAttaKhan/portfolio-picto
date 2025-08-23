@@ -4,46 +4,46 @@ import { Palette, Code, Smartphone, BarChart3, Users, Zap } from "lucide-react";
 export const WhatIDo = () => {
   const services = [
     {
-      icon: <Palette className="w-6 h-6 text-white" />,
-      title: "User Experience (UX) Design",
-      description: "I create intuitive, user-centered experiences through comprehensive research, user testing, and iterative design processes. My UX approach focuses on solving real user problems while achieving business objectives.",
+      icon: <Code className="w-6 h-6 text-white" />,
+      title: "Full-Stack Development",
+      description: "I build scalable, high-performance web applications using the MERN stack (MongoDB, Express.js, React, Node.js) and modern technologies like Next.js and NestJS. My solutions focus on performance, maintainability, and business growth.",
       color: "from-purple-500 to-pink-500",
-      features: ["User Research", "Wireframing", "Prototyping", "Usability Testing"]
+      features: ["React & Next.js", "Node.js & NestJS", "MongoDB & PostgreSQL", "REST APIs"]
     },
     {
-      icon: <Code className="w-6 h-6 text-white" />,
-      title: "User Interface (UI) Design",
-      description: "I design beautiful, accessible interfaces that combine aesthetics with functionality. Every pixel is crafted to enhance user engagement and create memorable brand experiences.",
+      icon: <Palette className="w-6 h-6 text-white" />,
+      title: "Frontend Development",
+      description: "I create responsive, user-centric interfaces using React, TypeScript, and modern CSS frameworks. My expertise includes building reusable component systems, optimizing performance, and ensuring exceptional user experiences.",
       color: "from-pink-500 to-purple-400",
-      features: ["Visual Design", "Design Systems", "Accessibility", "Responsive Design"]
+      features: ["React & TypeScript", "Tailwind CSS & SCSS", "Redux Toolkit", "Responsive Design"]
     },
     {
       icon: <Smartphone className="w-6 h-6 text-white" />,
-      title: "Web Development",
-      description: "I build modern, scalable web applications using cutting-edge technologies. From frontend frameworks to backend systems, I ensure robust, performant solutions that exceed expectations.",
+      title: "Mobile App Development",
+      description: "I develop cross-platform mobile applications using React Native, ensuring consistent user experiences across iOS and Android. My mobile solutions are optimized for performance and follow platform best practices.",
       color: "from-purple-400 to-indigo-500",
-      features: ["Frontend Development", "Backend Development", "API Integration", "Performance Optimization"]
+      features: ["React Native", "Cross-platform", "Performance Optimization", "Platform Guidelines"]
     },
     {
       icon: <BarChart3 className="w-6 h-6 text-white" />,
-      title: "Mobile App Development",
-      description: "I develop native and cross-platform mobile applications that deliver exceptional user experiences. My mobile solutions are optimized for performance, usability, and platform guidelines.",
+      title: "E-commerce Solutions",
+      description: "I specialize in building robust e-commerce platforms from scratch, integrating payment systems, inventory management, and analytics. My solutions have increased client revenue and improved conversion rates.",
       color: "from-indigo-500 to-purple-500",
-      features: ["iOS Development", "Android Development", "Cross-platform", "App Store Optimization"]
+      features: ["E-commerce Platforms", "Payment Integration", "Inventory Management", "Analytics Dashboard"]
     },
     {
       icon: <Users className="w-6 h-6 text-white" />,
-      title: "Consulting & Strategy",
-      description: "I provide strategic guidance to help businesses optimize their digital presence. From digital transformation to user experience audits, I help organizations make data-driven decisions.",
+      title: "SaaS Development",
+      description: "I help companies build and launch high-performance SaaS solutions with scalable architecture, real-time features, and comprehensive dashboards. My expertise includes subscription management and user analytics.",
       color: "from-purple-500 to-pink-400",
-      features: ["Digital Strategy", "UX Audits", "Process Optimization", "Team Training"]
+      features: ["SaaS Architecture", "Subscription Management", "Real-time Features", "User Analytics"]
     },
     {
       icon: <Zap className="w-6 h-6 text-white" />,
       title: "Performance Optimization",
-      description: "I optimize websites and applications for speed, accessibility, and user experience. Performance improvements lead to better engagement, conversions, and search engine rankings.",
+      description: "I optimize applications for speed, scalability, and user experience. My performance improvements have reduced load times by 15% and post-release bugs by 35%, leading to better user engagement and business metrics.",
       color: "from-pink-400 to-purple-500",
-      features: ["Speed Optimization", "SEO", "Accessibility", "Analytics"]
+      features: ["Code Optimization", "Performance Monitoring", "Bug Reduction", "Scalability"]
     }
   ];
 
@@ -91,8 +91,9 @@ export const WhatIDo = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
             >
-              I specialize in creating exceptional digital experiences that drive business growth. My comprehensive approach 
-              combines strategic thinking, creative design, and technical expertise to deliver solutions that users love and businesses value.
+              As a Senior MERN Stack Developer with 4+ years of experience, I specialize in building scalable, 
+              high-performance web applications that drive business growth. My expertise spans from frontend development 
+              to backend architecture, with a proven track record of delivering measurable business improvements.
             </motion.p>
 
             <motion.p 
@@ -102,8 +103,9 @@ export const WhatIDo = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
             >
-              Whether you need a complete website redesign, mobile app development, or strategic consulting, 
-              I have the skills and experience to bring your vision to life with precision and creativity.
+              I&apos;ve helped companies reduce post-release bugs by 35%, improve app performance by 15%, and increase 
+              e-commerce conversions by 10%. Whether you need a complete SaaS solution, e-commerce platform, or mobile app, 
+              I have the expertise to deliver exceptional results.
             </motion.p>
 
             {/* Action Button */}
