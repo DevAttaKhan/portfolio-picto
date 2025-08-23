@@ -24,7 +24,7 @@ export const About: React.FC = () => {
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left Image + Socials */}
+          {/* Left Image + Socials - Enhanced Elegant Design */}
           <motion.div 
             className="flex flex-col items-center relative order-2 lg:order-1"
             initial={{ opacity: 0, x: -50 }}
@@ -32,45 +32,179 @@ export const About: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
             <div className="relative">
-              {/* Floating background elements */}
+              {/* Floating decorative elements */}
               <motion.div
-                className="absolute -inset-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-3xl blur-2xl opacity-20"
+                className="absolute -top-6 -right-6 w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-xl"
                 animate={{ 
-                  scale: [1, 1.1, 1],
-                  rotate: [0, 5, 0]
+                  scale: [1, 1.2, 1],
+                  opacity: [0.2, 0.4, 0.2],
+                  rotate: [0, 180, 360]
                 }}
                 transition={{ 
-                  duration: 6, 
+                  duration: 8, 
                   repeat: Infinity, 
                   ease: "easeInOut" 
                 }}
               />
               
-              <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-[400px] sm:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/images/profile2.png"
-                  alt="Atta Ur Rahman - Senior MERN Stack Developer"
-                  className="w-full h-full object-cover"
-                  width={600}
-                  height={700}
-                  priority
+              <motion.div
+                className="absolute -bottom-8 -left-8 w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 bg-gradient-to-tr from-blue-400/20 to-purple-400/20 rounded-full blur-2xl"
+                animate={{ 
+                  scale: [1, 1.3, 1],
+                  opacity: [0.15, 0.3, 0.15],
+                  rotate: [360, 180, 0]
+                }}
+                transition={{ 
+                  duration: 10, 
+                  repeat: Infinity, 
+                  ease: "easeInOut",
+                  delay: 2
+                }}
+              />
+
+              {/* Main image container with enhanced styling */}
+              <div className="relative">
+                {/* Glowing background effect */}
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-[2.5rem] blur-3xl opacity-30"
+                  animate={{ 
+                    scale: [1, 1.1, 1],
+                    opacity: [0.3, 0.5, 0.3]
+                  }}
+                  transition={{ 
+                    duration: 6, 
+                    repeat: Infinity, 
+                    ease: "easeInOut" 
+                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+
+                {/* Simplified image frame with gradient border */}
+                <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-[400px] sm:h-[450px] lg:h-[500px] rounded-[2rem] p-[3px] bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500">
+                  <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden">
+                    <Image
+                      src="/images/profile2.png"
+                      alt="Atta Ur Rahman - Senior MERN Stack Developer"
+                      className="w-full h-full object-cover"
+                      width={600}
+                      height={700}
+                      priority
+                    />
+                    
+                    {/* Subtle overlay for depth */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+                    
+                    {/* Floating tech badges */}
+                    <motion.div
+                      className="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-purple-700 border border-white/50 shadow-lg"
+                      initial={{ opacity: 0, y: -20, scale: 0.8 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
+                      whileHover={{ scale: 1.1, y: -2 }}
+                    >
+                      React
+                    </motion.div>
+                    
+                    <motion.div
+                      className="absolute bottom-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-pink-700 border border-white/50 shadow-lg"
+                      initial={{ opacity: 0, y: 20, scale: 0.8 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      transition={{ duration: 0.6, delay: 1.0, ease: "easeOut" }}
+                      whileHover={{ scale: 1.1, y: 2 }}
+                    >
+                      Next.js
+                    </motion.div>
+
+                    {/* Additional tech badge */}
+                    <motion.div
+                      className="absolute top-1/2 -right-2 transform -translate-y-1/2 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-blue-700 border border-white/50 shadow-lg"
+                      initial={{ opacity: 0, x: 20, scale: 0.8 }}
+                      animate={{ opacity: 1, x: 0, scale: 1 }}
+                      transition={{ duration: 0.6, delay: 1.2, ease: "easeOut" }}
+                      whileHover={{ scale: 1.1, x: 2 }}
+                    >
+                      Node.js
+                    </motion.div>
+                  </div>
+                </div>
+
+                {/* Floating accent elements */}
+                <motion.div
+                  className="absolute -top-2 -right-2 w-4 h-4 bg-purple-500 rounded-full shadow-lg"
+                  animate={{ 
+                    scale: [1, 1.5, 1],
+                    opacity: [0.7, 1, 0.7]
+                  }}
+                  transition={{ 
+                    duration: 3, 
+                    repeat: Infinity, 
+                    ease: "easeInOut" 
+                  }}
+                />
+                
+                <motion.div
+                  className="absolute -bottom-2 -left-2 w-3 h-3 bg-pink-500 rounded-full shadow-lg"
+                  animate={{ 
+                    scale: [1, 1.3, 1],
+                    opacity: [0.7, 1, 0.7]
+                  }}
+                  transition={{ 
+                    duration: 4, 
+                    repeat: Infinity, 
+                    ease: "easeInOut",
+                    delay: 1
+                  }}
+                />
+
+                {/* Subtle shadow for depth */}
+                <div className="absolute inset-0 rounded-[2rem] shadow-2xl transform translate-y-4 opacity-20 bg-gradient-to-b from-black/20 to-transparent" />
               </div>
+
+              {/* Floating achievement card */}
+              <motion.div
+                className="absolute -bottom-6 -right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-white/50 max-w-[200px]"
+                initial={{ opacity: 0, y: 30, scale: 0.8 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.8, delay: 1.4, ease: "easeOut" }}
+                whileHover={{ scale: 1.05, y: -5 }}
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-lg">💻</span>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-gray-800">MERN Stack</p>
+                    <p className="text-xs text-gray-600">Full-Stack Expert</p>
+                  </div>
+                </div>
+              </motion.div>
             </div>
 
-            {/* Social Media Cards */}
+            {/* Social Media Cards - Enhanced with floating effect */}
             <motion.div 
-              className="mt-8 flex bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-white/20"
+              className="mt-8 flex bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-white/20 relative"
               initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
             >
+              {/* Floating background for social cards */}
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-purple-100/20 to-pink-100/20 rounded-2xl blur-sm"
+                animate={{ 
+                  scale: [1, 1.05, 1],
+                  opacity: [0.2, 0.4, 0.2]
+                }}
+                transition={{ 
+                  duration: 5, 
+                  repeat: Infinity, 
+                  ease: "easeInOut" 
+                }}
+              />
+
               <motion.a
                 href="http://www.linkedin.com/in/atta-ur-rahman-ak"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                className="group relative z-10 p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -80,7 +214,7 @@ export const About: React.FC = () => {
                 href="https://github.com/DevAttaKhan"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                className="group relative z-10 p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -90,7 +224,7 @@ export const About: React.FC = () => {
               </motion.a>
               <motion.a
                 href="mailto:attakhandev@gmail.com"
-                className="group p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                className="group relative z-10 p-3 rounded-xl text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -166,11 +300,11 @@ export const About: React.FC = () => {
                 {skills.map((skill, index) => (
                   <motion.span
                     key={skill}
-                    className="px-3 py-2 bg-purple-50 text-purple-700 rounded-lg text-sm font-medium text-center"
+                    className="px-3 py-2 bg-purple-50 text-purple-700 rounded-lg text-sm font-medium text-center hover:bg-purple-100 transition-colors cursor-pointer"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.4, delay: 1.6 + index * 0.1, ease: "easeOut" }}
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ scale: 1.05, y: -2 }}
                   >
                     {skill}
                   </motion.span>

@@ -41,7 +41,7 @@ export const Process = () => {
   ];
 
   return (
-    <section className="w-full py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-gray-50 to-purple-50">
+    <section id="process" className="w-full py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-gray-50 to-purple-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Left Content - Sticky */}
@@ -118,7 +118,7 @@ export const Process = () => {
                   whileHover={{ scale: 1.02 }}
                 >
                   {/* Step Number Badge */}
-                  <div className="absolute -top-3 -right-3 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                  <div className="absolute z-10 -top-3 -right-3 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
                     {step.id}
                   </div>
 

@@ -5,6 +5,14 @@
   --font-display: "Work Sans", sans-serif;
 }
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 a {
   font-family: inherit;
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
+

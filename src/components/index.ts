@@ -7,3 +7,4 @@ export * from "./cta-section";
 export * from './whatido';
 export * from './contact';
 export * from './footer';
+export * from './seo-scripts';

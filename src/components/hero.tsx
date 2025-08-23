@@ -221,9 +221,9 @@ export const Hero: React.FC = () => {
                       <Image
                         src="/images/profile2.png"
                         alt="Atta Ur Rahman - Senior MERN Stack Developer"
-                        className="w-full h-full object-cover"
-                        width={600}
-                        height={700}
+                        className="w-full h-full object-contain"
+                        width={400}
+                        height={500}
                         priority
                       />
                       
