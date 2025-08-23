@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
       animate={{ filter: "blur(0px) brightness(1)", scale: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
-      <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative w-full  flex items-center justify-center overflow-hidden pt-28 md:pt-36 pb-14 md:pb-20 ">
         <div className="absolute inset-0 bg-gradient-to-bl from-purple-100 via-white to-purple-50 -z-20" />
 
         <Particles
@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
           className="absolute inset-0 -z-10"
         />
 
-        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-12 px-4 sm:px-6 lg:px-8 h-full max-h-screen">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-12 px-4 sm:px-6 lg:px-8 h-full">
           {/* Left Content - Optimized for smaller screens */}
           <motion.div 
             className="flex-1 text-center lg:text-left max-w-xl lg:max-w-lg xl:max-w-xl z-10"

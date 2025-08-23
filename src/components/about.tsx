@@ -10,12 +10,12 @@ export const About: React.FC = () => {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const skills = [
-    "React & Next.js", "Node.js", 'NestJS', "TypeScript", "MongoDB", 
-    "PostgreSQL", "Redux Toolkit", "Tailwind CSS", "AWS & Docker"
+    "React", 'Next.js', "Node.js", 'ExpressJs', 'NestJS', "TypeScript", "MongoDB", 
+    "PostgreSQL", "Redux Toolkit", "Tailwind CSS", "AWS" , 'Docker'
   ];
 
   return (
-    <section id="about" className="w-full py-20 sm:py-24 lg:py-32 bg-white">
+    <section id="about" className="w-full py-18 md:py-20   bg-white">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 100 }}
@@ -220,12 +220,12 @@ export const About: React.FC = () => {
               className="mb-4"
             >
               <span className="inline-block px-4 py-2 heading-tag rounded-full text-sm font-medium">
-                💻 Senior Developer
+                 Senior Developer
               </span>
             </motion.div>
 
             <motion.h2 
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6 max-w-[560px]"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}

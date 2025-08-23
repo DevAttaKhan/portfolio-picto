@@ -17,8 +17,8 @@ export default function Icon() {
         width: "32px",
         height: "32px",
         borderRadius: "50%",
-        background: "linear-gradient(135deg, #8B5CF6, #EC4899)",
-        border: "2px solid #8B5CF6",
+        background: "linear-gradient(135deg, #10b981, #14b8a6)",
+        border: "2px solid #06b6d4",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -30,12 +30,12 @@ export default function Icon() {
           flexDirection: "column",
           alignItems: "center",
           lineHeight: "1",
-          color: "white",
+          color: "#000",
           fontWeight: "bold",
-          fontSize: "10px",
+          fontSize: "15px",
         }}
       >
-        <span style={{ fontSize: "14px" }}>A</span>
+        <span style={{ fontSize: "20px" }}>A</span>
     
       </div>
     </div>

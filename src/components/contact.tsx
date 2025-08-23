@@ -144,7 +144,7 @@ export const Contact: React.FC = () => {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-teal-600 outline-none transition-colors"
+                      className="w-full px-4 py-3 border rounded border-gray-300 focus:border-teal-600 outline-none transition-colors"
                       placeholder="Enter your name"
                     />
                   </motion.div>
@@ -160,7 +160,7 @@ export const Contact: React.FC = () => {
                     </label>
                     <input
                       type="email"
-                      className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-teal-600 outline-none transition-colors"
+                      className="w-full px-4 py-3 border rounded border-gray-300 focus:border-teal-600 outline-none transition-colors"
                       placeholder="Enter your email"
                     />
                   </motion.div>
@@ -176,12 +176,12 @@ export const Contact: React.FC = () => {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-teal-600 outline-none transition-colors"
+                      className="w-full px-4 py-3 border rounded border-gray-300 focus:border-teal-600 outline-none transition-colors"
                       placeholder="Enter your location"
                     />
                   </motion.div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
@@ -193,7 +193,7 @@ export const Contact: React.FC = () => {
                       </label>
                       <input
                         type="text"
-                        className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-teal-600 outline-none transition-colors"
+                        className="w-full px-4 py-3 border rounded border-gray-300 focus:border-teal-600 outline-none transition-colors"
                         placeholder="Enter budget"
                       />
                     </motion.div>
@@ -209,7 +209,7 @@ export const Contact: React.FC = () => {
                       </label>
                       <input
                         type="text"
-                        className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-teal-600 outline-none transition-colors"
+                        className="w-full px-4 py-3 border rounded border-gray-300 focus:border-teal-600 outline-none transition-colors"
                         placeholder="Enter subject"
                       />
                     </motion.div>
@@ -226,7 +226,7 @@ export const Contact: React.FC = () => {
                     </label>
                     <textarea
                       rows={4}
-                      className="w-full px-4 py-3 border-b-2 border-gray-200 focus:border-teal-600 outline-none transition-colors resize-none"
+                      className="w-full px-4 py-3 border rounded border-gray-300 focus:border-teal-600 outline-none transition-colors resize-none"
                       placeholder="Enter your message"
                     />
                   </motion.div>
