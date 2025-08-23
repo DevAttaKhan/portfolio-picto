@@ -7,9 +7,9 @@ export const Header: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-purple-600 text-white font-bold">
-            B
+            A
           </div>
-          <span className="text-xl font-bold text-gray-900 ">Brooklyn</span>
+          <span className="text-xl font-bold text-gray-900 ">Atta Khan</span>
         </div>
 
         {/* Navigation */}
