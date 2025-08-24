@@ -6,9 +6,6 @@ import {
   MapPin,
   Mail,
   Phone,
-  Facebook,
-  Globe,
-  Instagram,
   Linkedin,
   Github,
 } from "lucide-react";
@@ -69,8 +66,7 @@ export const Contact: React.FC = () => {
                     Let&apos;s discuss your Project
                   </h2>
                   <p className="text-gray-500 text-lg leading-relaxed">
-                    There are many variations of passages of Lorem Ipsu
-                    available. but the majority have suffered alte.
+Your vision + my skills = something great.
                   </p>
                 </div>
 
@@ -153,16 +149,7 @@ export const Contact: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                 className="space-y-6"
               >
-                {/* Form Title */}
-                <div className="lg:hidden">
-                  <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                    Let&apos;s discuss your Project
-                  </h2>
-                  <p className="text-gray-500 text-lg leading-relaxed mb-6">
-                    There are many variations of passages of Lorem Ipsu
-                    available. but the majority have suffered alte.
-                  </p>
-                </div>
+         
 
                 {/* Contact Form */}
                 <form className="space-y-6" onSubmit={handleSubmit}>

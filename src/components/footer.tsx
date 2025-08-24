@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
             className="text-white text-sm"
           >
-            Copyright © 2022 Picto.
+            Copyright © 2022.
           </motion.div>
         </motion.div>
       </div>

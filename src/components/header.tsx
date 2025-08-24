@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["Home", "About", "Process", "Portfolio",  , "Services"];
+  const navItems = ["Home", "About", "Process", "Portfolio",   "Services"];
 
   return (
     <header className="w-full bg-white fixed top-0 z-50 shadow-sm">
@@ -21,13 +22,13 @@ export const Header: React.FC = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item}
               href={`#${item.toLowerCase()}`}
               className="text-gray-700 hover:text-teal-600 transition-colors"
             >
               {item}
-            </a>
+            </Link>
           ))}
           <a
             href="#contact"
