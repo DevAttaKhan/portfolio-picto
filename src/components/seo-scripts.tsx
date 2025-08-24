@@ -14,7 +14,7 @@ export const SEOScripts = () => {
             "jobTitle": "Senior MERN Stack Developer & Tech Lead",
             "description": "Senior MERN Stack Developer with 4+ years of experience building scalable SaaS and e-commerce solutions",
             "url": "https://attakhan.dev",
-            "image": "https://attaurrahman.dev/images/hero-profile.png",
+            "image": "https://attakhan.dev/images/hero-profile.png",
             "sameAs": [
               "http://www.linkedin.com/in/atta-ur-rahman-ak",
               "https://github.com/DevAttaKhan"

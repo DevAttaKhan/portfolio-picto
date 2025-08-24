@@ -33,14 +33,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://attaurrahman.dev'),
+  metadataBase: new URL('https://attakhan.dev'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://attaurrahman.dev',
+    url: 'https://attakhan.dev',
     title: 'Atta Ur Rahman - Senior MERN Stack Developer & Tech Lead',
     description: 'Senior MERN Stack Developer with 4+ years of experience building scalable SaaS and e-commerce solutions. Expert in React, Next.js, Node.js, MongoDB, and AWS.',
     siteName: 'Atta Ur Rahman Portfolio',
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     title: 'Atta Ur Rahman - Senior MERN Stack Developer & Tech Lead',
     description: 'Senior MERN Stack Developer with 4+ years of experience building scalable SaaS and e-commerce solutions.',
     images: ['/images/profile2.png'],
-    creator: '@attaurrahman',
+    creator: '@attakhan',
   },
   robots: {
     index: true,
