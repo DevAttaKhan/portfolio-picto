@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import {  ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 type Props = { 
   id: number; 
@@ -8,9 +9,10 @@ type Props = {
   category: string; 
   tech: string[]; 
   image: string; 
+  slug: string;
 };
 
-export const Card: React.FC<Props> = ({  title, description, category, tech, image }) => (
+export const Card: React.FC<Props> = ({  title, description, category, tech, image, slug }) => (
   <motion.div
     whileHover={{ scale: 1.02 }}
     className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden border border-gray-100 transition-all duration-300 h-full"
@@ -68,14 +70,16 @@ export const Card: React.FC<Props> = ({  title, description, category, tech, ima
       </div>
 
       {/* Action Button */}
-      <motion.button 
-        className="group/btn w-full flex items-center justify-center gap-2 bg-gradient-primary text-white font-semibold px-4 py-3 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-      >
-        <span>View Case Study</span>
-        <ExternalLink size={16} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-      </motion.button>
+      <Link href={`/case-studies/${slug}`}>
+        <motion.button 
+          className="group/btn w-full flex items-center justify-center gap-2 bg-gradient-primary text-white font-semibold px-4 py-3 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          <span>View Case Study</span>
+          <ExternalLink size={16} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+        </motion.button>
+      </Link>
     </div>
   </motion.div>
 );
