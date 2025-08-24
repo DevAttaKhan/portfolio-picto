@@ -216,9 +216,9 @@ export const Hero: React.FC = () => {
                 <div className="relative w-full h-[280px] sm:h-[320px] md:h-[380px] lg:h-[450px] xl:h-[520px] rounded-[1.5rem] lg:rounded-[2rem] overflow-hidden">
                   {/* Gradient border overlay */}
                   <div className="absolute inset-0 rounded-[1.5rem] lg:rounded-[2rem] p-[2px] lg:p-[3px] bg-gradient-to-br bg-gradient-secondary">
-                    <div className="relative w-full h-full rounded-[1.4rem] lg:rounded-[1.8rem] overflow-hidden bg-white">
+                    <div className="relative w-full h-full rounded-[1.4rem] lg:rounded-[1.8rem] overflow-hidden bg-transparent">
                       <Image
-                        src="/images/hero-profile.png"
+                        src="/images/p12.png"
                         alt="Atta Ur Rahman - Senior MERN Stack Developer"
                         className="w-full h-full object-contain"
                         width={400}
