@@ -22,9 +22,9 @@ export const Footer: React.FC = () => {
             className="flex items-center space-x-2 mb-4 md:mb-0"
           >
             <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">B</span>
+              <span className="text-white font-bold text-sm">A</span>
             </div>
-            <span className="text-white text-xl font-bold">Brooklyn</span>
+            <span className="text-white text-xl font-bold">Atta Khan</span>
           </motion.div>
 
           {/* Navigation */}
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
             className="flex flex-wrap justify-center space-x-6 mb-4 md:mb-0"
           >
-            {["Home", "About", "Services", "Process", "Portfolio", "Blog", "Contact"].map((item) => (
+            {["Home", "About", "Services", "Process", "Portfolio",   "Contact"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}

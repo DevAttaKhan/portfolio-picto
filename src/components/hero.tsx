@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
       animate={{ filter: "blur(0px) brightness(1)", scale: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
-      <section className="relative w-full  flex items-center justify-center overflow-hidden pt-28 md:pt-36 pb-14 md:pb-20 ">
+      <section id='home' className="relative w-full  flex items-center justify-center overflow-hidden pt-28 md:pt-36 pb-14 md:pb-20 ">
         <div className="absolute inset-0 bg-gradient-to-bl from-purple-100 via-white to-purple-50 -z-20" />
 
         <Particles
@@ -98,8 +98,8 @@ export const Hero: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               I&apos;m a passionate{" "}
-              <span className="font-semibold primary-text-highlight">Senior MERN Stack Developer</span> with{" "}
-              <span className="font-semibold primary-text-highlight">4+ years of experience</span> based in Islamabad, Pakistan. 
+              <span className="font-semibold primary-text-highlight"> MERN Stack Developer</span> with{" "}
+              <span className="font-semibold primary-text-highlight">4+ years of experience</span>. 
               I specialize in building scalable SaaS and e-commerce solutions that drive measurable business growth.
             </motion.p>
 
@@ -218,7 +218,7 @@ export const Hero: React.FC = () => {
                   <div className="absolute inset-0 rounded-[1.5rem] lg:rounded-[2rem] p-[2px] lg:p-[3px] bg-gradient-to-br bg-gradient-secondary">
                     <div className="relative w-full h-full rounded-[1.4rem] lg:rounded-[1.8rem] overflow-hidden bg-white">
                       <Image
-                        src="/images/profile2.png"
+                        src="/images/p5.png"
                         alt="Atta Ur Rahman - Senior MERN Stack Developer"
                         className="w-full h-full object-contain"
                         width={400}

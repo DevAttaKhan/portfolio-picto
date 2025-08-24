@@ -159,8 +159,8 @@ export const CTASection = () => {
         >
           <p className="text-sm text-gray-400 mb-4">Trusted by businesses worldwide</p>
           <div className="flex flex-wrap justify-center gap-8 opacity-60">
-            <div className="text-white font-semibold">15+ Years Experience</div>
-            <div className="text-white font-semibold">250+ Projects Delivered</div>
+            <div className="text-white font-semibold">4+ Years Experience</div>
+            <div className="text-white font-semibold">100+ Projects Delivered</div>
             <div className="text-white font-semibold">98% Client Satisfaction</div>
           </div>
         </motion.div>

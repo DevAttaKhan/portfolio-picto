@@ -53,7 +53,7 @@ export const About: React.FC = () => {
                 <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-[400px] sm:h-[450px] lg:h-[500px] rounded-[2rem] p-[3px] bg-gradient-secondary ">
                   <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden">
                     <Image
-                      src="/images/profile2.png"
+                      src="/images/p6.png"
                       alt="Atta Ur Rahman - Senior MERN Stack Developer"
                       className="w-full h-full object-cover"
                       width={600}
