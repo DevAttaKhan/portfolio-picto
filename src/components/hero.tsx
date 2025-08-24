@@ -218,7 +218,7 @@ export const Hero: React.FC = () => {
                   <div className="absolute inset-0 rounded-[1.5rem] lg:rounded-[2rem] p-[2px] lg:p-[3px] bg-gradient-to-br bg-gradient-secondary">
                     <div className="relative w-full h-full rounded-[1.4rem] lg:rounded-[1.8rem] overflow-hidden bg-white">
                       <Image
-                        src="/images/p5.png"
+                        src="/images/hero-profile.png"
                         alt="Atta Ur Rahman - Senior MERN Stack Developer"
                         className="w-full h-full object-contain"
                         width={400}
