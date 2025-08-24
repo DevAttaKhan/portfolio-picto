@@ -1,24 +1,9 @@
-
-
-
+# *
 User-agent: *
 Allow: /
 
-# Sitemap
+# Host
+Host: https://attakhan.dev
+
+# Sitemaps
 Sitemap: https://attakhan.dev/sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 1
-
-# Disallow admin or private areas (if any)
-Disallow: /admin/
-Disallow: /private/
-Disallow: /api/
-
-# Allow important pages
-Allow: /
-Allow: /about
-Allow: /portfolio
-Allow: /contact
-Allow: /process
-Allow: /services 
